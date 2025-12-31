@@ -1,15 +1,17 @@
-import { ScrollTrigger, SplitText } from "gsap/all"
+import { ScrollTrigger, SplitText, ScrollToPlugin } from "gsap/all"
 import gsap from "gsap";
 import Navbar from "./components/Navbar";
 import SplashScreen from "./components/SplashScreen";
-import { useState } from "react";
+import React, { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import { ReactLenis, useLenis } from 'lenis/react'
 // global registering for plugins. 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
 
 const App = () => {
     const [showSplash, setShowSplash] = useState(true);
+
     return (
         <div className="bg-black min-hscreen">
             {/* show the splash, otherwise if complete show the main sections */}
@@ -17,9 +19,9 @@ const App = () => {
                 <SplashScreen onComplete={() => setShowSplash(false)} />
             ) : (
                 <main>
-                <Navbar />
-                <Hero />
-                <About />
+                    <Navbar />
+                    <Hero />
+                    <About />
                 </main>
             )}
         </div>
