@@ -15,7 +15,7 @@ const SplashScreen = ({ onComplete }) => {
         timeline.to(".logo", {
             opacity: 1,
             scale: 10,
-            duration: 1,
+            duration: 2,
             ease: "power4.inOut"
         })
             .to(".logo", {

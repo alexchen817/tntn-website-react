@@ -6,12 +6,14 @@ const Navbar = () => {
 
     const navRef = useRef();
 
+    // animate navbar to drop down
     useGSAP(() => {
         gsap.from(navRef.current, {
             y: -50,
             opacity: 0,
             duration: 1,
-            ease: "power3.out"
+            ease: "power3.out",
+            delay: 1
         })
     }, []);
 

@@ -5,7 +5,6 @@ import champions from "../assets/images/champions.jpg"
 const Hero = () => {
     useGSAP(() => {
         const titleSplit = new SplitText('.title', { type: 'chars, words' });
-
         // hide the initial position of the words
         gsap.set(titleSplit.words, { overflow: 'hidden' });
 
@@ -18,20 +17,22 @@ const Hero = () => {
         })
 
         gsap.from(".bg-image", {
-            opacity: 0,       
+            opacity: 0,
             filter: "blur(10px)",
             duration: 2,
             ease: "power2.out"
         })
     })
     return (
-        <div className="relative w-screen h-screen overflow-hidden">
+        <div className="relative w-screen h-screen">
             <img src={champions}
                 alt="VEX U 2025 Champion Photo"
                 className='bg-image w-full h-full object-cover opacity-81' />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30">
-                <h1 className="title font-valorant text-white text-6xl md:text-8xl font-bold tracking-tighter">
-                    TNTN Robotics
+            
+                <h1 className="title font-valorant text-white text-6xl md:text-8xl font-bold">
+                    <span className="text-tntngreen ">TNTN </span>
+                    <span>Robotics</span>
                 </h1>
             </div>
         </div>
