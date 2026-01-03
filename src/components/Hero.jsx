@@ -19,7 +19,7 @@ const Hero = () => {
         gsap.from(".bg-image", {
             opacity: 0,
             filter: "blur(10px)",
-            duration: 2,
+            duration: 2.5,
             ease: "power2.out"
         })
     })
@@ -28,9 +28,8 @@ const Hero = () => {
             <img src={champions}
                 alt="VEX U 2025 Champion Photo"
                 className='bg-image w-full h-full object-cover opacity-81' />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30">
-            
-                <h1 className="title font-valorant text-white text-6xl md:text-8xl font-bold">
+            <div className="absolute inset-0 flex flex-col transform translate-y-10 drop-shadow-lg will-change-filter items-center justify-center">
+                <h1 className="title font-valorant text-white text-7xl font-bold">
                     <span className="text-tntngreen ">TNTN </span>
                     <span>Robotics</span>
                 </h1>
