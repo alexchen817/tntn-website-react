@@ -32,7 +32,7 @@ const About = () => {
     }, { scope: ghostRef });
 
     return (
-        <div id="about" ref={ghostRef} className="overflow-hidden bg-black">
+        <div id="about" ref={ghostRef} className="overflow-hidden">
             <div ref={scrollRef} className="flex flex-col md:flex-row h-auto md:h-screen w-full md:w-fit flex-nowrap">
 
                 <section className="w-screen h-screen flex flex-col md:flex-row items-center justify-center p-6 md:p-20 flex-shrink-0">
@@ -56,7 +56,7 @@ const About = () => {
                     </div>
                 </section>
 
-                <section className="w-screen h-screen flex items-center justify-center p-6 md:p-20 flex-shrink-0 bg-zinc-900/50">
+                <section className="w-screen h-screen flex items-center justify-center p-6 md:p-20 flex-shrink-0">
                     <div className="max-w-4xl text-center">
                         <h2 className="text-white text-5xl md:text-8xl font-valorant mb-6">Our Mission</h2>
                         <p className="text-zinc-400 text-xl leading-relaxed">
