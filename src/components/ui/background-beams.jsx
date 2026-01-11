@@ -106,7 +106,7 @@ export const BackgroundBeams = React.memo(({ className }) => {
                                 duration: Math.random() * 10 + 10,
                                 ease: "easeInOut",
                                 repeat: Infinity,
-                                delay: Math.random() * 10,
+                                delay: Math.random() * 50,
                             }}
                         >
                             {/* Changed colors to TNTN Green (#AAFF00) */}
