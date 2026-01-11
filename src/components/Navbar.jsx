@@ -51,7 +51,7 @@ const Navbar = () => {
                     <a href="#team" className="hover:text-white transition-colors">Team</a>
                     <a href="#media" className="hover:text-white transition-colors">Media</a>
                     <a href="#events" className="hover:text-white transition-colors">Events</a>
-                    <a href="#events" className="hover:text-white transition-colors">Sponsors</a>
+                    <a href="#sponsors" className="hover:text-white transition-colors">Sponsors</a>
                 </div>
             </div>
         </nav>

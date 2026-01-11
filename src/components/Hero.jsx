@@ -24,7 +24,7 @@ const Hero = () => {
         })
     })
     return (
-        <div className="relative w-screen h-screen">
+        <div className="relative w-screen h-screen z-10">
             <img src={champions}
                 alt="VEX U 2025 Champion Photo"
                 className='bg-image w-full h-full object-cover opacity-81' />
