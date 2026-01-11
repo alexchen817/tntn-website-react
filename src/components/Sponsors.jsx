@@ -12,40 +12,46 @@ const Sponsors = () => {
         {
             logo: jukeboxLogo,
             name: "Jukebox Print",
-            url: null,
+            scale: "scale-100",
+            url: "https://www.jukeboxprint.com/",
         },
         {
             logo: navCanada,
             name: "NAV CANADA",
+            scale: "scale-90",
             url: null,
         },
         {
             logo: onshape,
             name: "Onshape",
-            url: "https://www.onshape.com",
+            scale: "scale-100",
+            url: null,
         },
         {
             logo: polymaker,
             name: "Polymaker",
+            scale: "scale-100",
             url: null,
         },
         {
             logo: winsource,
             name: "WinSource",
+            scale: "scale-100",
             url: null,
         },
         {
             logo: pontem,
             name: "Pontem",
+            scale: "scale-110",
             url: null,
         },
-    ];
+    ];  
 
     return (
         <div id="sponsors" className="py-20 flex flex-col antialiased items-center justify-center relative overflow-hidden">
-            <h2 className="font-valorant text-2xl text-white mb-10 uppercase tracking-tighter">
+            <h1 className="text-7xl text-tntngreen font-valorant mb-10 tracking-tighter">
                 Our Sponsors
-            </h2>
+            </h1>
             <div className=" h-[40rem] rounded-md flex flex-col antialiased] items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                     items={sponsors}

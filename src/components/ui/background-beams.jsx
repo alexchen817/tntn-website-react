@@ -109,7 +109,6 @@ export const BackgroundBeams = React.memo(({ className }) => {
                                 delay: Math.random() * 50,
                             }}
                         >
-                            {/* Changed colors to TNTN Green (#AAFF00) */}
                             <stop stopColor="#AAFF00" stopOpacity="0"></stop>
                             <stop stopColor="#AAFF00"></stop>
                             <stop offset="32.5%" stopColor="#AAFF00"></stop>

@@ -67,9 +67,8 @@ export const InfiniteMovingCards = ({
                 {items.map((item, idx) => (
                     <li
                         key={idx}
-                        className="relative w-[250px] max-w-full shrink-0 rounded-2xl border border-zinc-700 bg-zinc-900/50 px-8 py-10 md:w-[300px] transition-all duration-300 hover:border-red-500/50 shadow-xl"
+                        className={cn("border border-transparent hover:border-tntngreen relative w-[250px] max-w-full shrink-0 rounded-2xl bg-zinc-900/50 md:w-[300px] transition-all duration-300 shadow-xl")}
                     >
-                        {/* Conditional wrapper for URL */}
                         {item.url ? (
                             <a href={item.url} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                                 <CardContent item={item} />
@@ -86,10 +85,14 @@ export const InfiniteMovingCards = ({
 
 const CardContent = ({ item }) => (
     <div className="flex flex-col items-center justify-center gap-6">
-        <div className="h-16 w-full flex items-center justify-center">
+        <div className="h-28 w-full flex items-center justify-center rounded-xl bg-white/[0.08] border border-white/[0.05] p-4 shadow-inner">
             <img
                 src={item.logo}
-                className="h-full w-auto object-contain opacity-90 transition-opacity hover:opacity-100"
+                alt={item.name}
+                className={cn(
+                    "h-full w-auto object-contain opacity-90 transition-opacity hover:opacity-100",
+                    item.scale || "scale-100"
+                )}
             />
         </div>
     </div>

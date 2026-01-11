@@ -29,7 +29,7 @@ const Hero = () => {
                 alt="VEX U 2025 Champion Photo"
                 className='bg-image w-full h-full object-cover opacity-81' />
             <div className="absolute inset-0 flex flex-col transform translate-y-10 drop-shadow-lg will-change-filter items-center justify-center">
-                <h1 className="title font-valorant text-white text-7xl font-bold">
+                <h1 className="title font-valorant text-white text-7xl">
                     <span className="text-tntngreen ">TNTN </span>
                     <span>Robotics</span>
                 </h1>
