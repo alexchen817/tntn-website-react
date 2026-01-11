@@ -2,7 +2,7 @@ import team from "../assets/images/team.jpg"
 const About = () => {
 
     return (
-        <div className="z-10">
+        <div id="about" className="z-10">
             <div >
                 About Us
             </div>
