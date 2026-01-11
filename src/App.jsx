@@ -6,7 +6,6 @@ import React, { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import PerformanceStats from "./components/PerformanceStats";
-import Background from "../src/components/Background";
 import Sponsors from "./components/Sponsors";
 import Team from "./components/Team";
 // global registering for plugins. 
@@ -22,12 +21,11 @@ const App = () => {
                 <SplashScreen onComplete={() => setShowSplash(false)} />
             ) : (
                 <main className="relative min-h-screen">
-                    {/* <Background /> */}
                     <div className="relative z-10">
                         <Navbar />
                         <Hero />
-                        <About />
-                        <PerformanceStats />
+                        {/* <About /> */}
+                        {/* <PerformanceStats /> */}
                         <Team />
                         <Sponsors />
                     </div>
