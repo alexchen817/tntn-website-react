@@ -24,18 +24,26 @@ const Hero = () => {
         })
     })
     return (
-        <div className="relative w-screen h-screen z-10">
-            <img src={champions}
+        <div className="relative w-screen h-screen z-10 overflow-hidden">
+            <div className="absolute inset-0 bg-black/40 z-10" />
+            <img
+                src={champions}
                 alt="VEX U 2025 Champion Photo"
-                className='bg-image w-full h-full object-cover opacity-81' />
-            <div className="absolute inset-0 flex flex-col transform translate-y-10 drop-shadow-lg will-change-filter items-center justify-center">
-                <h1 className="title font-valorant text-white text-7xl">
-                    <span className="text-tntngreen ">TNTN </span>
-                    <span>Robotics</span>
+                className='bg-image w-full h-full object-cover object-bottom'
+            />
+
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center">
+                <h1 className="title font-valorant text-white 
+                    text-[15vw] md:text-[6vw] 
+                    leading-[0.85] md:leading-none
+                    flex flex-col md:flex-row items-center justify-center 
+                    drop-shadow-[12px_9px_3px_rgba(0,0,0,1)] will-change-filter">
+                    <span className="text-tntngreen">TNTN</span>
+                    <span className="mt-2 md:mt-0 md:ml-4">Robotics</span>
                 </h1>
             </div>
         </div>
-    )
+    );
 }
 
 export default Hero
