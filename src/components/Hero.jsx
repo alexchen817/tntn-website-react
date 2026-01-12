@@ -4,16 +4,20 @@ import { SplitText } from "gsap/all"
 import champions from "../assets/images/champions.jpg"
 const Hero = () => {
     useGSAP(() => {
+
+        // make the title visible asap
         const titleSplit = new SplitText('.title', { type: 'lines, chars, words' });
         // hide the initial position of the words
-        gsap.set(titleSplit.words, { 
-            paddingTop: "em",
+        gsap.set(titleSplit.words, {
+            paddingTop: "0.5em",
             paddingBottom: "0.1em",
-            marginTop: "-0.em",
-            overflow: 'hidden' });
-
+            marginTop: "-0.2em",
+            overflow: 'hidden'
+        });
+        // then animate 
         gsap.from(titleSplit.chars, {
-            yPercent: 100,
+            autoAlpha: 0,
+            yPercent: 110,
             duration: 1.8,
             ease: 'expo.out',
             stagger: 0.05,
