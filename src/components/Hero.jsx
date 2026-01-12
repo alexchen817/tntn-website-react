@@ -32,7 +32,7 @@ const Hero = () => {
         })
     })
     return (
-        <div className="relative w-screen h-screen z-10 overflow-hidden">
+        <div className="relative bg-dark-bg w-screen h-screen z-10 overflow-hidden">
             <div className="absolute inset-0 bg-black/40 z-10" />
             <img
                 src={champions}
