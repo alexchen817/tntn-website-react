@@ -4,9 +4,13 @@ import { SplitText } from "gsap/all"
 import champions from "../assets/images/champions.jpg"
 const Hero = () => {
     useGSAP(() => {
-        const titleSplit = new SplitText('.title', { type: 'chars, words' });
+        const titleSplit = new SplitText('.title', { type: 'lines, chars, words' });
         // hide the initial position of the words
-        gsap.set(titleSplit.words, { overflow: 'hidden' });
+        gsap.set(titleSplit.words, { 
+            paddingTop: "em",
+            paddingBottom: "0.1em",
+            marginTop: "-0.em",
+            overflow: 'hidden' });
 
         gsap.from(titleSplit.chars, {
             yPercent: 100,

@@ -8,6 +8,7 @@ import About from "./components/About";
 import PerformanceStats from "./components/PerformanceStats";
 import Sponsors from "./components/Sponsors";
 import Team from "./components/Team";
+import Footer from "./components/Footer";
 // global registering for plugins. 
 gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
 
@@ -15,21 +16,25 @@ const App = () => {
     const [showSplash, setShowSplash] = useState(true);
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-dark-bg">
             {/* show the splash, otherwise if complete show the main sections */}
             {showSplash ? (
                 <SplashScreen onComplete={() => setShowSplash(false)} />
             ) : (
-                <main className="relative min-h-screen">
-                    <div className="relative z-10">
-                        <Navbar />
-                        <Hero />
-                        {/* <About /> */}
-                        {/* <PerformanceStats /> */}
-                        <Team />
-                        <Sponsors />
-                    </div>
-                </main>
+                <>
+                    <main className="relative">
+                        <div className="relative z-10">
+                            <Navbar />
+                            <Hero />
+                            {/* <About /> */}
+                            {/* <PerformanceStats /> */}
+                            <Team />
+                            <Sponsors />
+                        </div>
+                        <Footer />
+                    </main>
+                </>
+
             )}
         </div>
     )

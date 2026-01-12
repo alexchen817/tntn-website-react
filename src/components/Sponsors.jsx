@@ -48,12 +48,12 @@ const Sponsors = () => {
     ];
 
     return (
-        <div id="sponsors" className="py-20 flex flex-col antialiased items-center justify-center relative overflow-hidden">
-            <h1 className="flex flex-col items-center justify-center text-center text-7xl text-tntngreen font-valorant mb-10 tracking-tighter">
+        <div id="sponsors" className="py-20 flex flex-col antialiased items-center justify-center relative">
+            <h1 className="flex flex-col md:flex-row items-center justify-center text-center text-7xl text-tntngreen font-valorant mb-10 tracking-tighter">
                 <span>Our</span>
                 <span className="mt-2 md:mt-0 md:ml-4">Sponsors</span>
             </h1>
-            <div className=" h-[40rem] rounded-md flex flex-col antialiased] items-center justify-center relative overflow-hidden">
+            <div className="h-[30rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                     items={sponsors}
                     direction="right"
