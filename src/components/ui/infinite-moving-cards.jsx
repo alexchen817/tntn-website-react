@@ -85,12 +85,12 @@ export const InfiniteMovingCards = ({
 
 const CardContent = ({ item }) => (
     <div className="flex flex-col items-center justify-center gap-6">
-        <div className="h-28 w-full flex items-center justify-center rounded-xl bg-white/[0.08] border border-white/[0.05] p-4 shadow-inner">
+        <div className="h-28 w-full flex items-center justify-center rounded-xl bg-white/[0.13] border border-white/[0.05] p-4 shadow-inner">
             <img
                 src={item.logo}
                 alt={item.name}
                 className={cn(
-                    "h-full w-auto object-contain opacity-90 transition-opacity hover:opacity-100",
+                    "h-full w-auto object-contain opacity-100 transition-opacity hover:opacity-100",
                     item.scale || "scale-100"
                 )}
             />
