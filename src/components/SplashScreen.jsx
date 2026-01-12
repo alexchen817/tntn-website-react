@@ -28,7 +28,7 @@ const SplashScreen = ({ onComplete }) => {
     }, [])
 
     return (
-        <div className='h-screen flex bg-black justify-center place-items-center'>
+        <div className='fixed inset-0 flex bg-black justify-center place-items-center'>
             <img className='logo w-64 will-change-transform' src={tntnLogo} alt="TNTN Logo" />
         </div>
     )
