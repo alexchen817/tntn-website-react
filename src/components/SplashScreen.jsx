@@ -14,21 +14,22 @@ const SplashScreen = ({ onComplete }) => {
         // 1) hide 2) appear 3) fade
         timeline.to(".logo", {
             opacity: 1,
-            scale: 10,
+            scale: 1,
             duration: 2,
             ease: "power4.inOut"
         })
             .to(".logo", {
                 opacity: 0,
+                // scale: 1.5,
                 duration: 1.5,
-                ease: "power2.inOut"
+                ease: "power2.out"
             });
 
     }, [])
 
     return (
         <div className='h-screen flex bg-black justify-center place-items-center'>
-            <img src={tntnLogo} alt="TNTN Logo" className="logo w-10" />
+            <img className='logo w-64 will-change-transform' src={tntnLogo} alt="TNTN Logo" />
         </div>
     )
 }
